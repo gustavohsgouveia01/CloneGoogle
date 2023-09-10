@@ -1,0 +1,148 @@
+@import url(reset.css);
+
+:root {
+  --dark-light: #202124;
+  --dark: #171717;
+  --nav-hover: #2f3034;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*  */
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--dark-light);
+  display: flex;
+  flex-direction: column;
+}
+
+nav,
+footer {
+  width: 100%;
+}
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.6rem 1rem;
+}
+
+.link,
+.menu-profile {
+  display: flex;
+  gap: 0.625rem;
+  align-items: center;
+}
+.link a {
+  font-size: 0.81rem;
+}
+.link a:hover {
+  text-decoration: underline;
+}
+.menu,
+.profile {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.menu:hover,
+.profile:hover {
+  background-color: var(--nav-hover);
+  cursor: pointer;
+}
+main {
+  flex: 1 0 31.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding-bottom: 230px;
+}
+.search {
+  width: 30.5%;
+  height: 47px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid #bdc1c660;
+  border-radius: 40px;
+  gap: 6px;
+  padding: 7px;
+}
+.search input {
+  width: 72%;
+  height: 80%;
+  background-color: transparent;
+  border: transparent;
+  color: #ffffff;
+  font-size: 1rem;
+}
+.search:hover {
+  background-color: var(--nav-hover);
+}
+
+.search span {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.btn-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.btn-search button {
+  width: 137px;
+  height: 35px;
+  border-radius: 5px;
+  background-color: #303134;
+  color: #fff;
+  border: none;
+  font-size: 0.9rem;
+}
+.btn-search button:hover {
+  border: 1px solid #bdc1c660;
+  cursor: pointer;
+}
+
+footer {
+  height: 95px;
+  background-color: var(--dark);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer1,
+.footer2 {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.footer1 {
+  border-bottom: 1px solid #ffffff40;
+}
+
+.footer2 {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.link-left,
+.link-right {
+  display: flex;
+  gap: 1.5rem;
+}
+.footer1 p,
+.footer2 .link-left a,
+.footer2 .link-right a {
+  color: #ffffff80;
+  font-size: 0.9rem;
+}
